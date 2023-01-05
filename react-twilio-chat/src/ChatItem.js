@@ -9,18 +9,18 @@ class ChatItem extends React.Component {
 
     return (
       <>
-        {(Message === "muhammadasim4515@gmail.com" ||
-          Message === "waqasshahh13@gmail.com") && (
-          <ListItem style={styles.listItem(isOwnMessage)}>
-            <div style={styles.author}>{message.author}</div>
-            <div style={styles.container(isOwnMessage)}>
-              {message.body}
-              <div style={styles.timestamp}>
-                {new Date(message.dateCreated.toISOString()).toLocaleString()}
-              </div>
+        {/* {(Message === "muhammadasim4515@gmail.com" ||
+          Message === "waqasshahh13@gmail.com") && ( */}
+        <ListItem style={styles.listItem(isOwnMessage)}>
+          <div style={styles.author}>{message.author}</div>
+          <div style={styles.container(isOwnMessage)}>
+            {message.body}
+            <div style={styles.timestamp}>
+              {new Date(message.dateCreated.toISOString()).toLocaleString()}
             </div>
-          </ListItem>
-        )}
+          </div>
+        </ListItem>
+        {/* )} */}
       </>
     );
   }
